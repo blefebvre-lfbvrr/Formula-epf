@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Formula Student — Formula EPF</title>
-<meta name="description" content="Projet Formula Student de l'association Formula EPF. Conception d'une monoplace de course étudiante, en phase d'études." />
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Familjen+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formula Student — Formula EPF</title>
+  <meta name="description" content="Projet Formula Student de l'association Formula EPF. Conception d'une monoplace de course étudiante, en phase d'études." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Familjen+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="theme-fs">
 
 <!-- ===================================================== NAV -->
 <nav class="top">
@@ -34,7 +33,6 @@
 <!-- ===================================================== HERO -->
 <header class="hero" id="top">
   <div class="wrap">
-
     <dl class="hero-meta">
       <div>
         <dt>Projet</dt>
@@ -76,7 +74,6 @@
         Notre démarche
       </a>
     </div>
-
   </div>
 </header>
 
@@ -236,6 +233,7 @@
 
   </div>
 </section>
+
 <!-- ===================================================== §03 DÉMARCHE -->
 <section class="sec" id="demarche">
   <div class="wrap">
@@ -449,7 +447,6 @@
         <li>EPF, école d'ingénieurs</li>
       </ul>
     </div>
-
     <div class="foot-block">
       <span class="ftitle">Projets</span>
       <ul>
@@ -458,7 +455,6 @@
         <li><a href="formation-cao.html">Formation CAO</a></li>
       </ul>
     </div>
-
     <div class="foot-block">
       <span class="ftitle">Contact</span>
       <ul>
@@ -466,7 +462,6 @@
         <li><a href="mailto:sponsoring@formula-epf.fr">sponsoring@formula-epf.fr</a></li>
       </ul>
     </div>
-
     <div class="legal">
       <span class="mono">© 2026 Formula EPF — Projet Formula Student</span>
       <span class="mono">Document v0.1 / révision T2 2026</span>
@@ -475,11 +470,11 @@
 </footer>
 
 <script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.sec, .hero h1, .hero-lead, .hero-cta, .hero-meta')
-  .forEach(el => { el.classList.add('reveal'); observer.observe(el); });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.sec, .hero h1, .hero-lead, .hero-cta, .hero-meta')
+    .forEach(el => { el.classList.add('reveal'); observer.observe(el); });
 </script>
 
 </body>

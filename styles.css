@@ -859,3 +859,53 @@ footer .legal .mono { font-size: 0.7rem; color: var(--text-dim); }
 ============================================================ */
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
 .reveal.in { opacity: 1; transform: none; }
+
+/* ============================================================
+   THÈMES PAR PROJET
+   La couleur d'accent par défaut (rouge motorsport) reste sur la
+   page d'accueil. Chaque page projet active sa propre teinte via
+   une classe sur <body>, ce qui repaint tout le site (CTA, badges,
+   bordures, statuts, séparateurs, dot du logo, etc.) en une seule
+   variable.
+============================================================ */
+
+/* Formula Student — Hi-vis chartreuse (course / sécurité / F1) */
+body.theme-fs {
+  --accent:     #D8FF3A;
+  --accent-dim: #8AA024;
+  --accent-soft:#E8FF73;
+}
+
+/* Caisse à savon — Orange route (descente / atelier / DIY) */
+body.theme-caisse {
+  --accent:     #FF7A45;
+  --accent-dim: #B3522E;
+  --accent-soft:#FF9C73;
+}
+
+/* Formation CAO — Cyan blueprint (CAO / technique / UI logiciel) */
+body.theme-cao {
+  --accent:     #3AD8FF;
+  --accent-dim: #2796B3;
+  --accent-soft:#73E3FF;
+}
+
+/* --- Ajustements lisibilité texte sur fond accent ------------
+   Les boutons primaires utilisent du blanc sur l'accent rouge, mais
+   le jaune et le cyan sont trop clairs : il faut du texte sombre.
+   L'orange est entre les deux, on garde le blanc pour la cohérence.
+============================================================ */
+body.theme-fs  .btn--primary,
+body.theme-fs  .btn--primary:hover,
+body.theme-cao .btn--primary,
+body.theme-cao .btn--primary:hover {
+  color: #0A0A0B;
+}
+body.theme-fs  .btn--primary:hover,
+body.theme-cao .btn--primary:hover {
+  color: var(--accent);
+}
+body.theme-fs  .cta-nav:hover,
+body.theme-cao .cta-nav:hover {
+  color: #0A0A0B;
+}
