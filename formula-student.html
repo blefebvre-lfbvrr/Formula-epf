@@ -130,67 +130,112 @@
       <span class="sec-tag">/ État au T2 2026</span>
     </div>
 
-    <ul class="advance-list">
-      <li>
-        <span class="id">A.01</span>
-        <span class="label">Cahier des charges véhicule
-          <small>Définition des objectifs de performance, contraintes règlementaires Formula Student.</small>
-        </span>
-        <span class="status status--done">Terminé</span>
-      </li>
-      <li>
-        <span class="id">A.02</span>
-        <span class="label">Architecture véhicule
-          <small>Choix d'architecture générale, répartition des masses, packaging.</small>
-        </span>
-        <span class="status status--done">Terminé</span>
-      </li>
-      <li>
-        <span class="id">A.03</span>
-        <span class="label">Système de freinage &mdash; dimensionnement
-          <small>Calculs de décélération, pressions hydrauliques, sélection des composants (maîtres-cylindres Beringer, étriers AP Racing, disques fonte custom 193 mm).</small>
-        </span>
-        <span class="status status--done">Terminé</span>
-      </li>
-      <li>
-        <span class="id">A.04</span>
-        <span class="label">Suspension &mdash; études de concept
-          <small>Définition cinématique, géométrie de direction, dimensionnement préliminaire.</small>
-        </span>
-        <span class="status status--wip">En cours</span>
-      </li>
-      <li>
-        <span class="id">A.05</span>
-        <span class="label">Châssis &mdash; pré-dimensionnement
-          <small>Étude tubulaire, conformité au règlement, premiers calculs de rigidité.</small>
-        </span>
-        <span class="status status--wip">En cours</span>
-      </li>
-      <li>
-        <span class="id">A.06</span>
-        <span class="label">Groupe motopropulseur &mdash; sélection
-          <small>Choix de la motorisation, étude du refroidissement et de l'admission.</small>
-        </span>
-        <span class="status status--planned">À venir</span>
-      </li>
-      <li>
-        <span class="id">A.07</span>
-        <span class="label">Électronique embarquée &mdash; spécification
-          <small>Capteurs, acquisition, faisceau, conformité règlementaire.</small>
-        </span>
-        <span class="status status--todo">À venir</span>
-      </li>
-      <li>
-        <span class="id">A.08</span>
-        <span class="label">Fabrication &mdash; mise en place atelier
-          <small>Identification des moyens de production internes et externes.</small>
-        </span>
-        <span class="status status--todo">À venir</span>
-      </li>
-    </ul>
+    <!-- Stats globales -->
+    <div class="stats-hero">
+      <div class="stats-global">
+        <span class="stats-label">Avancement global</span>
+        <span class="stats-value">40,00<small>%</small></span>
+        <span class="stats-meta">39 pièces suivies · 4 pôles</span>
+        <div class="bar"><span style="width:40%"></span></div>
+      </div>
+      <div class="stats-poles">
+        <div class="pole-card">
+          <span class="pole-code">AER</span>
+          <span class="pole-name">Aérodynamique</span>
+          <span class="pole-pct">0<small>%</small></span>
+          <div class="bar"><span style="width:0%"></span></div>
+          <span class="pole-meta">3 pièces</span>
+        </div>
+        <div class="pole-card">
+          <span class="pole-code">CHA</span>
+          <span class="pole-name">Châssis</span>
+          <span class="pole-pct">92<small>%</small></span>
+          <div class="bar"><span style="width:91.67%"></span></div>
+          <span class="pole-meta">3 pièces</span>
+        </div>
+        <div class="pole-card">
+          <span class="pole-code">LAS</span>
+          <span class="pole-name">Liaisons au sol</span>
+          <span class="pole-pct">59<small>%</small></span>
+          <div class="bar"><span style="width:59.25%"></span></div>
+          <span class="pole-meta">20 pièces</span>
+        </div>
+        <div class="pole-card">
+          <span class="pole-code">PWT</span>
+          <span class="pole-name">Powertrain</span>
+          <span class="pole-pct">8<small>%</small></span>
+          <div class="bar"><span style="width:7.69%"></span></div>
+          <span class="pole-meta">13 pièces</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Détail par pôle -->
+    <div class="pole-block">
+      <h3 class="pole-head"><span>AER</span> Aérodynamique</h3>
+      <ul class="advance-list">
+        <li><span class="id">—</span><span class="label">Body</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Aileron avant</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Aileron arrière</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+      </ul>
+    </div>
+
+    <div class="pole-block">
+      <h3 class="pole-head"><span>CHA</span> Châssis</h3>
+      <ul class="advance-list">
+        <li><span class="id">—</span><span class="label">Châssis</span><span class="pct">100%</span><span class="status status--done">Terminé</span></li>
+        <li><span class="id">—</span><span class="label">Impact Attenuator</span><span class="pct">100%</span><span class="status status--done">Terminé</span></li>
+        <li><span class="id">—</span><span class="label">Siège</span><span class="pct">75%</span><span class="status status--wip">En cours</span></li>
+      </ul>
+    </div>
+
+    <div class="pole-block">
+      <h3 class="pole-head"><span>LAS</span> Liaisons au sol</h3>
+      <ul class="advance-list">
+        <li><span class="id">1A1D-G</span><span class="label">Triangles avants <small>Inférieur et supérieur</small></span><span class="pct">20%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1A2D-G</span><span class="label">Triangles arrières <small>Inférieur et supérieur</small></span><span class="pct">20%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1B1D-G</span><span class="label">Porte-moyeux avant <small>Identique avant/arrière</small></span><span class="pct">90%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1B2D-G</span><span class="label">Porte-moyeux arrière <small>Identique avant/arrière</small></span><span class="pct">90%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1C1D-G</span><span class="label">Moyeux avant <small>Disque frein vissé, deux roulements</small></span><span class="pct">50%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1C2D-G</span><span class="label">Moyeux arrière <small>Disque frein vissé</small></span><span class="pct">50%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1D1D-G</span><span class="label">Jante avant</span><span class="pct">100%</span><span class="status status--done">Terminé</span></li>
+        <li><span class="id">1D2D-G</span><span class="label">Jante arrière</span><span class="pct">100%</span><span class="status status--done">Terminé</span></li>
+        <li><span class="id">1EXD-G</span><span class="label">Pneus</span><span class="pct">100%</span><span class="status status--done">Terminé</span></li>
+        <li><span class="id">1JD-G</span><span class="label">Biellettes de direction <small>Avant et arrière</small></span><span class="pct">95%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1G</span><span class="label">Cardan de direction <small>Existant Norelem</small></span><span class="pct">100%</span><span class="status status--done">Terminé</span></li>
+        <li><span class="id">1H</span><span class="label">Crémaillère de direction <small>Dimensions à finaliser</small></span><span class="pct">70%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1L1D-G</span><span class="label">Amortisseur avant <small>Dimensions à vérifier</small></span><span class="pct">50%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1L2D-G</span><span class="label">Amortisseur arrière <small>Dimensions à vérifier</small></span><span class="pct">50%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1F</span><span class="label">Volant <small>Avec support palettes</small></span><span class="pct">70%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1KD-G</span><span class="label">Support crémaillère <small>Interface fixation châssis</small></span><span class="pct">30%</span><span class="status status--wip">En cours</span></li>
+        <li><span class="id">1M1D-G</span><span class="label">Ressort avant</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">1M2D-G</span><span class="label">Ressort arrière</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">1N1-2</span><span class="label">Disque de frein <small>Vissé au moyeu</small></span><span class="pct">100%</span><span class="status status--done">Terminé</span></li>
+        <li><span class="id">1O1-2 D-G</span><span class="label">Étrier de frein <small>Existant à trouver</small></span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+      </ul>
+    </div>
+
+    <div class="pole-block">
+      <h3 class="pole-head"><span>PWT</span> Powertrain</h3>
+      <ul class="advance-list">
+        <li><span class="id">1P</span><span class="label">Moteur</span><span class="pct">100%</span><span class="status status--done">Terminé</span></li>
+        <li><span class="id">—</span><span class="label">Couronne</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">PSB</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Chaîne</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Différentiel</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Arbre essieu arrière</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Support pédales <small>Position réglable selon pilote</small></span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Pédales</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Réservoir essence</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Réservoir liquide refroidissement</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Arrivée d'air</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Échappement</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+        <li><span class="id">—</span><span class="label">Radiateurs</span><span class="pct">0%</span><span class="status status--todo">À venir</span></li>
+      </ul>
+    </div>
+
   </div>
 </section>
-
 <!-- ===================================================== §03 DÉMARCHE -->
 <section class="sec" id="demarche">
   <div class="wrap">
